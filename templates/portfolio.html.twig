@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Saunders Web Solutions: Java/Spring or PHP/MySQL, Laravel,Zend Web Development{% endblock %}
+
+{% block body %}
+
+    {% for item in portfolio_items %}
+        <section>
+            <h3>{{ item.pageTitle }}</h3>
+            <img src="/{{ item.image.mediaThumb }}" alt="" class="portfolio_image"/>
+            <p>{{ item.content|raw }}</p>
+
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                {% for t in item.tech %}
+                    <li>{{ t.technology }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    {% endfor %}
+
+
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+
+    </style>
+{% endblock %}

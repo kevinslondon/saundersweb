@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Saunders Web Solutions{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    <link href="/css/main.css" type="text/css" rel="stylesheet"/>
+    <meta name="keywords"
+          content="Java,Java Server Pages,JSP,Servlets,Tomcat,Apache,JDO,JEE,PHP,PHP4,PHP5,MySQL,Dreamweaver, Spring, Laravel, Zend"/>
+    <meta name="description"
+          content="Web development consultancy providing Java/Spring or PHP/MySQL, Laravel,Zend Web Development"/>
+    <script src="{{ asset('js/angular.js') }}"></script>
+
+    <meta name="viewport" content="initial-scale=1">
+
+</head>
+<body>
+<header>
+    <a href="/"><img src="/images/logo.png" width="609" height="47" border="0" alt="Home"/></a>
+</header>
+<menu>
+    <nav class="clearfix">
+        <ul class="clearfix">
+            <li><a href="/">Home</a></li>
+            <li><a href="/page/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <a href="#" id="pull">Menu</a>
+    </nav>
+</menu>
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+
+<footer>
+    &copy; Saunders Web Solutions 2015
+</footer>
+</body>
+</html>

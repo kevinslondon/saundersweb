@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Saunders Web Solutions: Java/Spring or PHP/MySQL, Laravel,Zend Web Development{% endblock %}
+
+{% block body %}
+
+    {% for page in pages %}
+    <section>
+       {{ page.content|raw }}
+    </section>
+    {% endfor %}
+
+
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+
+    </style>
+{% endblock %}
