@@ -131,6 +131,10 @@ nav a#pull {
     margin-bottom: 10px;
 }
 
+.form_submit{
+    width: 80px;
+}
+
 input {
     width: 200px;
 }
